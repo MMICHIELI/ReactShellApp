@@ -1,0 +1,50 @@
+{
+  "name": "react-shell-app",
+  "version": "0.0.3",
+  "description": "My 5Th Shell App using REACT in TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development --open",
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "test": "jest"
+  },
+  "author": "MICHIELI",
+  "license": "MIT",
+  "dependencies": {
+    "@types/enzyme": "^3.1.13",
+    "@types/jest": "^23.3.2",
+    "@types/react": "^16.4.14",
+    "@types/react-dom": "^16.0.7",
+    "lodash.shuffle": "^4.2.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.1",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "awesome-typescript-loader": "^5.2.1",
+    "babel-loader": "^8.0.2",
+    "chai": "^4.1.2",
+    "chai-enzyme": "^1.0.0-beta.1",
+    "chai-jest-diff": "^1.0.2",
+    "css-loader": "^1.0.0",
+    "dirty-chai": "^2.0.1",
+    "enzyme": "^3.6.0",
+    "enzyme-adapter-react-16": "^1.5.0",
+    "enzyme-to-json": "^3.3.4",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^23.6.0",
+    "react-test-renderer": "^16.5.1",
+    "sinon": "^6.3.2",
+    "sinon-chai": "^3.2.0",
+    "source-map-loader": "^0.2.4",
+    "style-loader": "^0.23.0",
+    "typescript": "^3.0.3",
+    "webpack": "^4.18.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.8"
+  }
+}
