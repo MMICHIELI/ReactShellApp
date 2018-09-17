@@ -12,24 +12,25 @@
   "author": "MICHIELI",
   "license": "MIT",
   "dependencies": {
-    "@types/enzyme": "^3.1.13",
+    "@types/enzyme": "^3.1.14",
     "@types/jest": "^23.3.2",
     "@types/react": "^16.4.14",
     "@types/react-dom": "^16.0.7",
     "lodash.shuffle": "^4.2.0",
     "prop-types": "^15.6.2",
     "react": "^16.5.0",
-    "react-dom": "^16.5.0"
-  },
-  "babel": {
-    "presets": ["env","react"]
+    "react-dom": "^16.5.0",
+    "styled-components": "^3.4.6"
   },
   "devDependencies": {
     "@babel/core": "^7.0.1",
     "@babel/preset-env": "^7.0.0",
     "@babel/preset-react": "^7.0.0",
     "awesome-typescript-loader": "^5.2.1",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
     "babel-loader": "^8.0.2",
+    "babel-plugin-styled-components": "^1.7.1",
     "chai": "^4.1.2",
     "chai-enzyme": "^1.0.0-beta.1",
     "chai-jest-diff": "^1.0.2",
@@ -45,9 +46,28 @@
     "sinon-chai": "^3.2.0",
     "source-map-loader": "^0.2.4",
     "style-loader": "^0.23.0",
+    "ts-jest": "^23.1.4",
     "typescript": "^3.0.3",
     "webpack": "^4.18.1",
     "webpack-cli": "^3.1.0",
     "webpack-dev-server": "^3.1.8"
+  },
+  "jest": {
+    "setupFiles": [
+      "<rootDir>/src/setupTests.js"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ],
+    "transform": {
+      "^.+\\.(ts|tsx)$": "ts-jest",
+      "^.+\\.(js|jsx)$": "babel-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(ts|tsx|js)?$"
   }
 }

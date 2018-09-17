@@ -1,9 +1,6 @@
 import * as React from 'react';
 import { Component } from "react";
 
-// Style
-// import logo from './logo.svg'
-import './App.css'
 // Components
 import { Hello } from "./components/Hello";
 
