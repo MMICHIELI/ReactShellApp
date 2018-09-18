@@ -23,11 +23,11 @@ module.exports = {
   module: {
     rules: [
       // All files with a '.ts' or '.tsx' extension will be handled by 'awesome-typescript-loader'.
-      { test: /\.tsx?$/, loader: 'awesome-typescript-loader' },
+      { test: /\.(ts|tsx?)$/, loader: 'awesome-typescript-loader' },
 
       {
         test: /\.(js|jsx)$/,
-        exclude: /node_module/,
+        exclude: /node_modules/,
         use: ['babel-loader']
       },
       {
